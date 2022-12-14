@@ -1,3 +1,8 @@
+body
+{
+    background-color: darkkhaki;
+}
+
 #start-btn
 {
     width: 40%;
@@ -26,4 +31,17 @@
     width: 360px;
     height: 250px;
     border: 1px solid grey;
+}
+
+.pop-up
+{
+    color:red; 
+    background-color: aliceblue;
+    width: 70%;
+}
+
+.falar
+{
+    background-color: coral;
+    width: 50%;
 }

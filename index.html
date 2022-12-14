@@ -19,8 +19,9 @@
             <h2>Aplicativo de fotos três vezes tiradas de forma consecutiva</h2>
         </div>
         <hr>
-        <h4 style="color:red;">Assim que o pop-up aparecer, clique em permitir (a não ser, que você já tenha permitido). Depois fale o comando</h4>
-        
+        <h4 class = "pop-up">Assim que o pop-up aparecer, clique em permitir (a não ser, que você já tenha permitido). Depois fale o comando</h4>
+    
+    <div class = "falar">
         <div class="form-group">
             <h3>Diga "selfie" para tirar as três fotos</h3>
         </div>
@@ -28,19 +29,19 @@
         <button class = "btn btn-primary" onclick = "start();">Iniciar</button>
         <p>Pressione o botão acima para ter acesso ao comando da câmera</p>
 
+    </div>
         <label>Sua webcam : </label>
         <div id = "camera"></div>
 
         <br>
 
         <label id = "lgAparece">Suas selfies aparecerão aqui: </label>
-        <span>
             <div class = "result" id = "result1"></div>
             <div class = "result" id = "result2"></div>
             <div class = "result" id = "result3"></div>
-        </span>
 
-    </center>   
+    </center>  
+
     </div>
 
     <script src="main.js"></script>
