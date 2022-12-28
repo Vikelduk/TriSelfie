@@ -15,18 +15,13 @@ body
     border:1px solid grey;
 }
 
-#logo_img
-{
-    width: 150px;
-    border-radius: 100px;
-}
-
 #textbox
 {
     width: 300px;
+    text-align: center;
 }
 
-.result
+.result1 .result2 .result3
 {
     width: 360px;
     height: 250px;
@@ -45,3 +40,15 @@ body
     background-color: coral;
     width: 50%;
 }
+
+.copy_right_footer {
+    position: fixed;
+    color: rgba(126, 126, 126, 0.961);
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 2.5;
+    text-shadow: 5px 5px 5px rgb(151, 149, 149);
+ }

@@ -1,48 +1,63 @@
 <html>
     <head>
-       <title>Meu App TriSelfie</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <title>App Minha selfie</title>
+ <meta name = "viewport" content = "width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<link href="style.css" rel="stylesheet">
+<link href = "style.css" rel = "stylesheet">
 
-</head>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    </head>
  
 <body>
     <div class="container">
     <center>
         <a href = "" id = "link" download = "myselfie.png"></a>
-        <div>
-            <h1>TriSelfie  </h1>
-            <h2>Aplicativo de fotos três vezes tiradas de forma consecutiva</h2>
-        </div>
+        <h1>Tri Selfie</h1>
+        <h3>App de tirar três fotos de forma consecutiva</h3>
+
         <hr>
-        <h4 class = "pop-up">Assim que o pop-up aparecer, clique em permitir (a não ser, que você já tenha permitido). Depois fale o comando</h4>
-    
-    <div class = "falar">
-        <div class="form-group">
-            <h3>Diga "selfie" para tirar as três fotos</h3>
-        </div>
-        
-        <button class = "btn btn-primary" onclick = "start();">Iniciar</button>
-        <p>Pressione o botão acima para ter acesso ao comando da câmera</p>
 
-    </div>
-        <label>Sua webcam : </label>
-        <div id = "camera"></div>
+        <span>
+            <div>
+                <div class="form-group">
+                    <h3>Diga "selfie" para tirar suas fotos</h3>
+                    <label>Sua saída de voz : </label>
+                    <textarea class = "form-control" id = "textbox" readonly = "true"></textarea>
+                </div>
+                <button class = "btn btn-primary" onclick = "start();">Iniciar</button>
+                <p>Pressione o botão Iniciar para ter acesso a câmera</p>    
+            </div>
+            <div>
+                <label>Sua webcam : </label>
+                <div id = "camera"></div>  
+            </div>  
+        </span>
 
+        <hr>
+
+        <h4> 1º Foto: 5 seg. / 2º Foto: 10 seg. /  3º Foto: 15 seg. </h4>
+
+        <hr>
+
+        <label>Suas selfies serão exibidas aqui: </label>
+        <div id = "result1"></div>
         <br>
-
-        <label id = "lgAparece">Suas selfies aparecerão aqui: </label>
-            <div class = "result" id = "result1"></div>
-            <div class = "result" id = "result2"></div>
-            <div class = "result" id = "result3"></div>
-
-    </center>  
-
+        <div id = "result2"></div>
+        <br>
+        <div id = "result3"></div>
+        
+    </center>
     </div>
+
+    <br><br>
+
+    <div class="copy_right_footer">
+        Desenvolvido por - Vitor Klein
+      </div>
 
     <script src="main.js"></script>
 </body>
